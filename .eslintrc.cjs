@@ -131,6 +131,17 @@ module.exports = {
       },
     ],
     "import/no-duplicates": "error",
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        js: "never",
+        jsx: "never",
+        ts: "never",
+        tsx: "never",
+        json: "always",
+      },
+    ],
     "@next/next/no-img-element": 0,
     "@next/next/no-html-link-for-pages": ["error", "app"],
     "unicorn/prevent-abbreviations": 0,

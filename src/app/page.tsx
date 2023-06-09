@@ -1,8 +1,22 @@
+import AboutMe from "./components/aboutMe/about-me";
+import Competences from "./components/competences/competences";
+import Portfolio from "./components/portfolio/portfolio";
+import Welcome from "./components/welcome/welcome";
+
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between bg-primary">
-      <div>
-        <h1>"welcome, let's start"</h1>
+    <main className="mt-10 flex flex-col bg-primary">
+      <div id="welcome">
+        <Welcome />
+      </div>
+      <div id="about">
+        <AboutMe />
+      </div>
+      <div id="competences">
+        <Competences />
+      </div>
+      <div id="portfolio">
+        <Portfolio />
       </div>
     </main>
   );
