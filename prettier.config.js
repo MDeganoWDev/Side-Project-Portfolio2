@@ -1,0 +1,33 @@
+/** @type {import('prettier').Config} */
+// eslint-disable-next-line import/no-commonjs, unicorn/prefer-module
+module.exports = {
+  trailingComma: "es5",
+  tabWidth: 2,
+  printWidth: 80,
+  endOfLine: "lf",
+  semi: true,
+  singleQuote: false,
+  jsxBracketSameLine: false,
+  importOrder: [
+    "^(react/(.*)$)|^(react$)",
+    "^(next/(.*)$)|^(next$)",
+    "<THIRD_PARTY_MODULES>",
+    "",
+    "^~/components/(.*)$",
+    "",
+    "^types$",
+    "^~/lib/(.*)$",
+    "^~/config/(.*)$",
+    "^~/types/(.*)$",
+    "",
+    "^~/styles/(.*)$",
+    "^[./]",
+  ],
+  importOrderSeparation: false,
+  importOrderSortSpecifiers: true,
+  importOrderBuiltinModulesToTop: true,
+  importOrderParserPlugins: ["typescript", "jsx", "decorators-legacy"],
+  importOrderMergeDuplicateImports: true,
+  importOrderCombineTypeAndValueImports: true,
+  plugins: ["@ianvs/prettier-plugin-sort-imports"],
+};
